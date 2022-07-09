@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    display: flex;
+    margin:20px 0;
+    flex-direction: column;
+    background-color: white;
+    width:340px;
+    border-radius: 15px;
+}
+
+.content {
+    padding:25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.picture {
+    width:100%;
+    background-image: url('images/image-product-mobile.jpg');
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height:225px;
+}
+
+.perfum-logo {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+    font-weight:500;
+    color:hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    margin-top:7.5px;
+    line-height: 35px;
+    color:hsl(212, 21%, 14%);
+}
+
+.text {
+    margin-top:7.5px;
+    margin-bottom: 7.5px;
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:20px;
+}
+
+h2 {
+    font-size: 32.5px;
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', sans-serif;
+}
+
+.price p {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button {
+    margin:12.5px 0;
+    align-self: center;
+    width:200px;
+    background-color: hsl(158, 42%, 24%);
+    border: 1px solid hsl(158, 42%, 24%);
+    padding: 12.5px 27.5px;
+    border-radius: 7.5px;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(158, 39%, 35%);
+    border: 1px solid hsl(158, 39%, 35%);
+}
+
+@media screen and (min-width:700px) {
+    .card {
+        width:600px;
+        flex-direction: row;
+    }
+
+    .picture {
+        width: 100%;
+        background-image: url('images/image-product-desktop.jpg');
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+}
