@@ -41,7 +41,7 @@ body {
 }
 
 .content {
-    padding:25px 20px;
+    padding:30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +101,7 @@ h2 {
 button {
     margin:12.5px 0;
     align-self: center;
-    width:200px;
+    width:100%;
     background-color: hsl(158, 42%, 24%);
     border: 1px solid hsl(158, 42%, 24%);
     padding: 12.5px 27.5px;
@@ -130,9 +130,13 @@ button:hover {
     }
 
     .picture {
-        width: 100%;
+        width: 45%;
         background-image: url('images/image-product-desktop.jpg');
         border-bottom-left-radius: 15px;
         border-top-right-radius: 0px;
+    }
+
+    .content {
+        width:55%;
     }
 }
